@@ -1,3 +1,73 @@
-body{
-    background-color: red;
+*{
+    background-color: rgb(255, 246, 164);
+}
+
+header{
+    background-color: rgb(245, 222, 202);
+}
+
+.carrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid red 1px;
+    border-radius: 100%;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.carrito:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.menuCarrito{
+    background-color: rgb(64, 64, 64);
+    display: none;
+}
+
+.menuCarrito.mostrar{
+    display: block;
+    position: fixed;
+    right: 0px;
+}
+
+.ofertas{
+    border: solid red 2px;
+    min-width: 100%;
+    min-height: 175px;
+    margin-bottom: 5px;
+}
+
+.productos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid red 2px;
+    border-radius: 10px;
+    padding: 4px;
+    width: 200px;
+    height: 215px;
+}
+
+.tarjeta:hover{
+    transform: scale(1.1);
+}
+
+.agregar{
+    width: 90%;
+}
+
+.agregar:hover{
+    cursor: pointer;
+    transform: scale(1.05);
 }

@@ -3,15 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/estilos.css">
     <title>prueba</title>
 </head>
 <body>
-    <section>
-        <h2>Actualizacion</h2>
-    </section>
-    <section>
-        <h3>Mas pruebas</h3>
-        <h4>Mas cosas</h4>
-    </section>
+    <header>
+        <div>
+            <h1>TITULO</h1>
+        </div>
+    </header>
+    <main>
+        <div class="carrito" onclick="document.querySelector('.menuCarrito').classList.toggle('mostrar')">
+            <img src="" alt="Cart">
+        </div>
+
+        <aside class="menuCarrito">
+            <ul>
+                <li>
+                    Opcion 1
+                </li>
+                <li>
+                    Opcion 2
+                </li>
+            </ul>
+        </aside>
+
+        <section class="ofertas">
+            <img src="" alt="Imagenes Ofertas">
+        </section>
+
+        <section class="productos">
+            <div class="tarjeta">
+                <h3>Prod 1</h3>
+                <img src="" alt="Producto 1">
+                <p>Precio: 1000$</p>
+                <button class="agregar" id="prod1">Agregar</button>
+            </div>
+
+            <div class="tarjeta">
+                <h3>Prod 1</h3>
+                <img src="" alt="Producto 2">
+                <p>Precio: 1000$</p>
+                <button class="agregar" id="prod2">Agregar</button>
+            </div>
+
+            <div class="tarjeta">
+                <h3 class="nombre">Prod 1</h3>
+                <img src="" alt="Producto 3">
+                <p class="precio">1000</p>
+                Cantidad: <input type="number" value="1" min="1" class="cantidad">
+                <button class="agregar" id="prod3">Agregar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="/js.js"></script>
 </body>
 </html>
